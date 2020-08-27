@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>캔버스</title>
+	<meta charset='utf-8'>
+	
+	
+	
+	<link rel='stylesheet' type='text/css' href='./css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='./css/style.css'>
+
+	
+	
+
+	 
+	 
+</head>
+<body>
+<div id='wrap'>
+	
+	<canvas id='canvas_wrap'>
+
+	</canvas>
+
+
+	<!-- <script src='./js/canvas.js'> -->
+	<script>
+
+		function canvasFn(){
+		var can = document.getElementById('canvas_wrap'); //캔버스는 자바스크립트 코딩만을 합니다. 
+    	var ctx = can.getContext('2d'); //캔버스의 콘텍스트 가져온다. 선언문
+
+        console.log( can );
+        console.log( ctx );
+
+        //드로잉
+        //ctx.fillRect(200, 200, 200, 200);
+        ctx.strokeRect(200, 200, 200, 200);
+		ctx.fillstyle = 'blue';
+
+		ctx.lineTo(300, 300);
+		ctx.lineTo(300, 300);
+		ctx.lineTo(300, 300);
+		ctx.lineTo(300, 300);
+		ctx.stroke();
+	}
+	</script>
+	
+</div>  
+</body>
+</html>
