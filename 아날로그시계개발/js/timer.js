@@ -16,8 +16,6 @@
         console.log('m '+ m );
         console.log('s '+ s );
     
-    
- 
     $('.timeS').css({ transform:'rotate('+(6*s)+'deg)'});   // 공배 불인정
     $('.timeM').css({ transform:'rotate('+(6*m)+'deg)'});
     $('.timeH').css({ transform:'rotate('+((30*h)+(m*0.5))+'deg)'});
